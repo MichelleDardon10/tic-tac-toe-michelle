@@ -69,10 +69,10 @@ def decide_move(board: list, player_id: str) -> [int, int]: #Two strategies need
     """
     Decides next move to make.
     """
-     if (symbol) ==0:
-        row = randint(0, 2)
-        column = randint(0, 2)
-        return [row, column]
+    print(player_id)
+    row = randint(0, 2)
+    column = randint(0, 2)
+    return [row, column]
 
 
 def validate_move(board: list, move: list) -> bool:
