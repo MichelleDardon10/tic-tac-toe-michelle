@@ -36,7 +36,7 @@ def register_user(name: str) -> str:
     return player_id
 
 
-def is_my_turn(player_id: str) -> bool: 
+def is_my_turn(player_id: str) -> bool: #CHAR is assigned radomly to player_id
     """
     Checks if it is our turn via API.
     """
@@ -65,13 +65,14 @@ def read_board() -> list:
     return board
 
 
-def decide_move(board: list, player_id: str) -> [int, int]:
+def decide_move(board: list, player_id: str) -> [int, int]: #Two strategies needed
     """
     Decides next move to make.
     """
-    row = randint(0, 2)
-    column = randint(0, 2)
-    return [row, column]
+     if (symbol) ==0:
+        row = randint(0, 2)
+        column = randint(0, 2)
+        return [row, column]
 
 
 def validate_move(board: list, move: list) -> bool:

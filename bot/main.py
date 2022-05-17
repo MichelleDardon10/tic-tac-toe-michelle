@@ -18,7 +18,7 @@ def main():
 
     # Register is open now, let's register as player
     PLAYER_ID = utils.register_user(NAME)
-    print("Registered successfully as {}, player ID is: {}\n".format(NAME, PLAYER_ID))
+    print("Registered successfully as {}, player ID is: {}\n".format(NAME, PLAYER_ID))  #CHAR is asigned
     sleep(2)
 
     # Game-continues flag, set to True until there's a winner
