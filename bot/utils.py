@@ -248,7 +248,7 @@ def decide_move(board: list, player_id: str): #Two strategies needed
 
 
 
-    #0 strategy
+    ##########0 strategy##########################
 
     if(player_id == "O" and board[posicion_r][posicion_c]=="-"):
 
@@ -329,8 +329,106 @@ def decide_move(board: list, player_id: str): #Two strategies needed
         return [row, column]
 
     
-    row = randint(0, 2)
-    column = randint(0, 2)
+    ###### DEFENSIVE STRATEGY "O"####
+
+    ##COLUMNS
+
+    
+    #column 0
+
+    elif(player_id =="O" and board[0][0]=="X" and board[1][0]=="X"):
+        row = 2
+        column = 0
+
+        print("a")
+
+        return [row, column]
+
+
+    elif(player_id =="O" and board[1][0]=="X" and board[2][0]=="X"):
+        row = 0
+        column = 0
+
+        print("b")
+
+        return [row, column]
+
+
+
+    elif(player_id =="O" and board[0][0]=="X" and board[2][0]=="X"):
+        row = 1
+        column = 0
+
+        print("c")
+
+        return [row, column]
+
+    #column 1 
+
+    elif(player_id =="O" and board[0][1]=="X" and board[1][1]=="X"):
+        row = 2
+        column = 1
+
+        print("d")
+
+        return [row, column]
+
+
+    elif(player_id =="O" and board[1][1]=="X" and board[2][1]=="X"):
+        row = 0
+        column = 1
+
+        print("e")
+
+        return [row, column]
+
+
+    elif(player_id =="O" and board[0][1]=="X" and board[2][1]=="X"):
+        row = 1
+        column = 1
+
+        print("f")
+
+        return [row, column]
+
+    # column 2
+
+    elif(player_id =="O" and board[0][2]=="X" and board[1][2]=="X"):
+        row = 2
+        column = 2
+
+        print("g")
+
+        return [row, column]
+
+    elif(player_id =="O" and board[1][2]=="X" and board[2][2]=="X"):
+        row = 0
+        column = 2
+
+        print("h")
+
+        return [row, column]
+
+
+    elif(player_id =="O" and board[0][2]=="X" and board[2][2]=="X"):
+        row = 1
+        column = 2
+
+        print("i")
+
+        return [row, column]
+
+
+
+
+
+
+
+
+
+
+
+    ############# END DEFENSIVE##########
 
     
     row = randint(0, 2)
