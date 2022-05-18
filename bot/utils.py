@@ -242,10 +242,91 @@ def decide_move(board: list, player_id: str): #Two strategies needed
         return [row, column]
     
    
+    #### ROWS ###
+
+    #ROW 0
+
+    elif(player_id =="X" and board[0][0]=="O" and board[0][1]=="O"):
+        row = 0
+        column = 2
+
+        print("i")
+
+        return [row, column]
+
+    elif(player_id =="X" and board[0][0]=="O" and board[0][2]=="O"):
+        row = 0
+        column = 1
+
+        print("i")
+
+        return [row, column]
+
+    elif(player_id =="X" and board[0][1]=="O" and board[0][2]=="O"):
+        row = 0
+        column = 0
+
+        print("i")
+
+        return [row, column]
 
 
 
 
+    ### ROW 1
+
+    elif(player_id =="X" and board[1][0]=="O" and board[1][1]=="O"):
+        row = 1
+        column = 2
+
+        print("i")
+
+        return [row, column]
+
+
+    elif(player_id =="X" and board[1][0]=="O" and board[1][2]=="O"):
+        row = 1
+        column = 1
+
+        print("i")
+
+        return [row, column]
+
+
+    elif(player_id =="X" and board[1][1]=="O" and board[1][2]=="O"):
+        row = 1
+        column = 0
+
+        print("i")
+
+        return [row, column]
+
+
+    #### ROW 2 ####
+
+    elif(player_id =="X" and board[2][0]=="O" and board[2][2]=="O"):
+        row = 2
+        column = 1
+
+        print("i")
+
+        return [row, column]
+
+    elif(player_id =="X" and board[2][1]=="O" and board[2][2]=="O"):
+        row = 2
+        column = 0
+
+        print("i")
+
+        return [row, column]
+
+    elif(player_id =="X" and board[2][0]=="O" and board[2][1]=="O"):
+        row = 2
+        column = 2
+
+        print("i")
+
+        return [row, column]
 
 
     ##########0 strategy##########################
@@ -422,9 +503,94 @@ def decide_move(board: list, player_id: str): #Two strategies needed
 
 
 
+    #### ROWS ####
+
+    ### ROW 0
 
 
+    
+    #### ROWS ###
 
+    #ROW 0
+
+    elif(player_id =="O" and board[0][0]=="X" and board[0][1]=="X"):
+        row = 0
+        column = 2
+
+        print("i")
+
+        return [row, column]
+
+    elif(player_id =="O" and board[0][0]=="X" and board[0][2]=="X"):
+        row = 0
+        column = 1
+
+        print("i")
+
+        return [row, column]
+
+    elif(player_id =="O" and board[0][1]=="X" and board[0][2]=="X"):
+        row = 0
+        column = 0
+
+        print("i")
+
+        return [row, column]
+
+    ### ROW 1
+
+    elif(player_id =="O" and board[1][0]=="X" and board[1][1]=="X"):
+        row = 1
+        column = 2
+
+        print("i")
+
+        return [row, column]
+
+
+    elif(player_id =="O" and board[1][0]=="X" and board[1][2]=="X"):
+        row = 1
+        column = 1
+
+        print("i")
+
+        return [row, column]
+
+
+    elif(player_id =="O" and board[1][1]=="X" and board[1][2]=="X"):
+        row = 1
+        column = 0
+
+        print("i")
+
+        return [row, column]
+
+
+    ### ROW 2###
+
+    elif(player_id =="O" and board[2][0]=="X" and board[2][2]=="X"):
+        row = 2
+        column = 1
+
+        print("i")
+
+        return [row, column]
+
+    elif(player_id =="O" and board[2][1]=="X" and board[2][2]=="X"):
+        row = 2
+        column = 0
+
+        print("i")
+
+        return [row, column]
+
+    elif(player_id =="O" and board[2][0]=="X" and board[2][1]=="X"):
+        row = 2
+        column = 2
+
+        print("i")
+
+        return [row, column]
 
 
 
