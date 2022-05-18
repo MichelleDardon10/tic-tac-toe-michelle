@@ -65,13 +65,98 @@ def read_board() -> list:
     return board
 
 
-def decide_move(board: list, player_id: str) -> [int, int]: #Two strategies needed
+def decide_move(board: list, player_id: str): #Two strategies needed
     """
     Decides next move to make.
     """
     print(player_id)
+
+    posicion_r = 0
+    posicion_c = 0
+
+
+    if(player_id == "X" and board[posicion_r][posicion_c]=="-"):
+
+        row = posicion_r
+        column = posicion_c
+        print("1")
+
+        return [row, column]
+
+    elif(player_id =="X" and board[0][2]=="-"):
+        row = posicion_r
+        column = posicion_c +2
+
+        print("2")
+
+        return [row, column]
+
+    elif(player_id == "X" and board[0][0]=="X" and board[0][2]=="X" and board[0][1]=="-"):
+        row= posicion_r
+        column=posicion_c+1
+
+        print("3")
+
+        return [row, column]
+    
+
+    elif(player_id =="X" and board[2][2]=="-"):
+        row = posicion_r +2
+        column = posicion_c +2
+
+        print("4")
+
+        return [row, column]
+
+
+    elif(player_id == "X" and (board[0][0]=="X" and board[2][0]=="X" and board[1][2]=="-")):
+        row= posicion_r+1
+        column=posicion_c+2
+
+        print("5")
+
+        return [row, column]
+
+    #Fin estrategia principal
+    
+
+    elif(player_id =="X" and board[0][2]=="X" and board[2][2]=="-" and board[2][2]=="-"):
+        row = posicion_r +2
+        column = posicion_c +2
+
+        print("6")
+
+        return [row, column]
+
+
+    elif(player_id == "X" and (board[0][0]=="X" and board[2][2]=="X" and board[1][1]=="-")):
+        row= posicion_r+1
+        column=posicion_c+1
+
+        print("7")
+
+        return [row, column]
+
+    elif(player_id =="X" and board[2][0]=="-"):
+        row = posicion_r +2
+        column = posicion_c 
+
+        print("8")
+
+        return [row, column]
+
+    elif(player_id =="X" and board[0][0]=="X" and board[2][0]=="X" and board[1][0]=="-"):
+        row = posicion_r +1
+        column = posicion_c
+
+        print("9")
+
+        return [row, column]
+
+    
     row = randint(0, 2)
     column = randint(0, 2)
+    
     return [row, column]
 
 
