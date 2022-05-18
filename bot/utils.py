@@ -153,13 +153,102 @@ def decide_move(board: list, player_id: str): #Two strategies needed
 
         return [row, column]
 
+    #defensive strategy X
+
+    #vertical
+
+    #column 0
+
+    elif(player_id =="X" and board[0][0]=="O" and board[1][0]=="O"):
+        row = 2
+        column = 0
+
+        print("a")
+
+        return [row, column]
+
+
+    elif(player_id =="X" and board[1][0]=="O" and board[2][0]=="O"):
+        row = 0
+        column = 0
+
+        print("b")
+
+        return [row, column]
+
+
+
+    elif(player_id =="X" and board[0][0]=="O" and board[2][0]=="O"):
+        row = 1
+        column = 0
+
+        print("c")
+
+        return [row, column]
+
+    #column 1 
+
+    elif(player_id =="X" and board[0][1]=="O" and board[1][1]=="O"):
+        row = 2
+        column = 1
+
+        print("d")
+
+        return [row, column]
+
+
+    elif(player_id =="X" and board[1][1]=="O" and board[2][1]=="O"):
+        row = 0
+        column = 1
+
+        print("e")
+
+        return [row, column]
+
+
+    elif(player_id =="X" and board[0][1]=="O" and board[2][1]=="O"):
+        row = 1
+        column = 1
+
+        print("f")
+
+        return [row, column]
+
+    # column 2
+
+    elif(player_id =="X" and board[0][2]=="O" and board[1][2]=="O"):
+        row = 2
+        column = 2
+
+        print("g")
+
+        return [row, column]
+
+    elif(player_id =="X" and board[1][2]=="O" and board[2][2]=="O"):
+        row = 0
+        column = 2
+
+        print("h")
+
+        return [row, column]
+
+
+    elif(player_id =="X" and board[0][2]=="O" and board[2][2]=="O"):
+        row = 1
+        column = 2
+
+        print("i")
+
+        return [row, column]
+    
+   
+
+
+
+
+
+
     #0 strategy
-
-    print(player_id)
-
-    posicion_r = 0
-    posicion_c = 0
-
 
     if(player_id == "O" and board[posicion_r][posicion_c]=="-"):
 
